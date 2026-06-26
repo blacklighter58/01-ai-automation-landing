@@ -3,7 +3,7 @@ const formMessage = document.querySelector("#formMessage");
 const navToggle = document.querySelector(".nav-toggle");
 const mainNav = document.querySelector(".main-nav");
 
-// Мобильное меню открывается без перезагрузки страницы.
+// Мобильное меню открывается без перезагрузки и закрывается после выбора раздела.
 navToggle.addEventListener("click", () => {
   const isOpen = mainNav.classList.toggle("is-open");
   navToggle.setAttribute("aria-expanded", String(isOpen));
